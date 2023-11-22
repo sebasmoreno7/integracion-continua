@@ -1,5 +1,5 @@
-FROM nginx:latest
+FROM php:7.4-apache
 
-COPY index.html /usr/share/nginx/html
+COPY src/ /var/www/html/
 
-
+EXPOSE 80
