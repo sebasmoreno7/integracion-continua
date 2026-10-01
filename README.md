@@ -6,7 +6,7 @@ These files are examples rather than a documented, running CI pipeline. Some Doc
 
 ## Contents
 
-- `Dockerfile`: PHP 7.4/Apache example; its `COPY src/` path is absent here.
+- `Dockerfile`: PHP 7.4/Apache example; copies the included `app/index.html`. Build it with `docker build -t integracion-continua-php .` and check the sample page locally with `docker run --rm -p 127.0.0.1:8080:80 integracion-continua-php`.
 - `Dockerfile-datos`: PostgreSQL base-image example.
 - `Dockerfile.oracle`: generated MySQL/Oracle Linux Dockerfile example.
 - `Dockerfile.txt`: Jenkins Dockerfile example that references support files absent here.
